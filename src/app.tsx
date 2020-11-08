@@ -1,17 +1,24 @@
 import React from 'react';
-import cn from 'classnames';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import HomePage from './pages/Home';
+import Pokedex from './pages/Pokedex';
 
 import s from './App.module.scss';
 
 const App = () => {
   return (
     <div className={s.container}>
-      <Header />
-      <div className={cn(s.content)}>This is App component !</div>
-      <Footer />
+      <Router>
+        <Switch>
+          <Route path="/pokedex">
+            <Pokedex />
+          </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 };

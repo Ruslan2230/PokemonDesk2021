@@ -1,2 +1,4 @@
 # PokemonDesk
- this is it 
+
+yarn tsm src/
+yarn pretty-quick
