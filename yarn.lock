@@ -1089,6 +1089,14 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/hookrouter@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@types/hookrouter/-/hookrouter-2.2.3.tgz#edddbaa50acf2970aa1023ff8d2d9121d89e3d17"
+  integrity sha512-cgkXYVf6xG59VSbKUt1/JMXnpEEc1UdqWjMKOMYXPy+U5fGScRqmqrdZNlKX9H07sAir82txWbi5356UvjEnxA==
+  dependencies:
+    "@types/react" "*"
+    csstype "^3.0.2"
+
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.1"
   resolved "https://registry.npmjs.org/@types/html-minifier-terser/-/html-minifier-terser-5.1.1.tgz"
@@ -4344,6 +4352,11 @@ homedir-polyfill@^1.0.1:
   integrity sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==
   dependencies:
     parse-passwd "^1.0.0"
+
+hookrouter@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/hookrouter/-/hookrouter-1.2.3.tgz#a65599a1be376b51734caf7c4f7f8aba59bb2c77"
+  integrity sha512-n0mqEBGgXIxYRNMHlwCzoyTOk0OB5Es3jwUyA3+2l5nte/52n0CMMj1bmoCabC8K43YTUEr0zzexTBfo//tq2Q==
 
 hosted-git-info@^2.1.4:
   version "2.8.8"
