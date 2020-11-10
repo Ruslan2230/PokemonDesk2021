@@ -1,0 +1,20 @@
+@import '../../variables';
+
+.root {
+  min-height: 100vh;
+  background: linear-gradient(180deg, $third 0%, $primary 100%);
+}
+
+.contentWrap {
+  display: flex;
+}
+.contentText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contentParallax {
+  text-align: center;
+}
