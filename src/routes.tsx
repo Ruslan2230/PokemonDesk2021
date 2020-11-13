@@ -1,7 +1,14 @@
 import React from 'react';
 import EmptyPage from './pages/EmptyPage';
-
+import Pokedex from './pages/Pokedex';
 import HomePage from './pages/Home';
+
+export enum linkEnum {
+  HOME = '/',
+  POKEDEX = '/pokedex',
+  LEGENDERIES = '/legendaries',
+  DOCUMENTATION = '/documentation',
+}
 
 interface IGeneralMenu {
   title: string;
@@ -12,22 +19,22 @@ interface IGeneralMenu {
 export const GENERAL_MENU: IGeneralMenu[] = [
   {
     title: 'Home',
-    link: '/',
+    link: linkEnum.HOME,
     component: () => <HomePage />,
   },
   {
     title: 'Pokédex',
-    link: '/pokedex',
-    component: () => <EmptyPage title="Pokédex" />,
+    link: linkEnum.POKEDEX,
+    component: () => <Pokedex />,
   },
   {
     title: 'Legendaries',
-    link: '/legendaries',
+    link: linkEnum.LEGENDERIES,
     component: () => <EmptyPage title="Legendaries" />,
   },
   {
     title: 'Documentation',
-    link: '/documentation',
+    link: linkEnum.DOCUMENTATION,
     component: () => <EmptyPage title="Documentation" />,
   },
 ];

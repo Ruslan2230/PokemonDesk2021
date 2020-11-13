@@ -2,8 +2,8 @@ import React from 'react';
 import { navigate } from 'hookrouter';
 
 import Button from '../../components/Button';
-
 import teamRocketTrio from './assets/Team_Rocket_trio_OS 1.png';
+import { linkEnum } from '../../routes';
 
 import s from './PageNotFound.module.scss';
 
@@ -19,7 +19,7 @@ const PokedexPage = () => {
           <span>The rocket team </span> has won this time.
         </div>
 
-        <Button onClick={() => navigate('/')} color="#F2CB07">
+        <Button onClick={() => navigate(linkEnum.HOME)} color="#F2CB07">
           Return{' '}
         </Button>
       </div>

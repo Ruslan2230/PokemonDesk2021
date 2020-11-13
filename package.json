@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Tutorial",
   "main": "index.js",
-  "repository": "https://github.com/UraSerdyuk/PokemonDesk.git",
-  "author": "UraSerdyuk <yuraserdiuk@gmail.com>",
+  "repository": "https://github.com/RuslanGrytsak/PokemonDesk.git",
+  "author": "RuslanGrytsak <gritsak5@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",

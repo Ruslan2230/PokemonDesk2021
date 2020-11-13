@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import cn from 'classnames';
 import { A, usePath } from 'hookrouter';
 
@@ -31,4 +31,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../../components/header';
 import PokedexPage from '../Pokedex';
 
 interface IEmptyPageProps {
@@ -9,7 +8,6 @@ interface IEmptyPageProps {
 const EmptyPage: React.FC<IEmptyPageProps> = ({ title }) => {
   return (
     <div>
-      <Header />
       Empty Page! {title}
       {title === 'Pokédex' ? <PokedexPage /> : ''}
     </div>
