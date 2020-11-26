@@ -4,7 +4,11 @@ interface CssExports {
   contentParallax: string;
   contentText: string;
   contentWrap: string;
+  menu: string;
+  pokemonsGalary: string;
   root: string;
+  serchInput: string;
+  total: string;
 }
 export const cssExports: CssExports;
 export default cssExports;

@@ -2,33 +2,34 @@ import React from 'react';
 import Heading from '../Heading';
 
 import s from './PokemonCard.module.scss';
+import { PokemonsRequest } from '../../interface/Pokemons';
 
-const PokemonCard = () => {
+const PokemonCard = (props: PokemonsRequest) => {
+  const { name, img, types, stats } = props;
   return (
     <div className={s.root}>
       <div className={s.infoWrap}>
         <Heading size="xs" variant="1" className={s.titleName}>
-          Charmander
+          {name}
         </Heading>
         <div className={s.statWrap}>
           <div className={s.statItem}>
-            <div className={s.statValue}>52</div>
+            <div className={s.statValue}>{stats.attack}</div>
             Attack
           </div>
           <div className={s.statItem}>
-            <div className={s.statValue}>43</div>
+            <div className={s.statValue}>{stats.defense}</div>
             Defense
           </div>
         </div>
-        <div className={s.labelWrap}>
-          <span className={s.label}>Fire</span>
-        </div>
+        {types.map((item: string) => (
+          <div className={s.labelWrap}>
+            <span className={s.label}>{item}</span>
+          </div>
+        ))}
       </div>
       <div className={s.pictureWrap}>
-        <img
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
-          alt="Charmander"
-        />
+        <img src={img} alt={name} />
       </div>
     </div>
   );

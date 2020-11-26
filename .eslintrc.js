@@ -13,6 +13,8 @@ module.exports = {
   },
   plugins: ['prettier', 'prettier', 'react', '@typescript-eslint'],
   rules: {
+    'no-param-reassign': 0,
+    'react/jsx-props-no-spreading': 'off',
     'import/no-unresolved': 'off',
     'no-shadow': 'off',
     'react/prop-types': 'off',
