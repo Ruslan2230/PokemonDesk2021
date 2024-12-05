@@ -1,0 +1,54 @@
+@import '../../variables';
+
+.root {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 30.32%, #f5f5f5 100%);
+}
+
+.contentWrap {
+  text-align: center;
+}
+.contentText {
+  text-align: center;
+}
+
+.contentParallax {
+  text-align: center;
+}
+
+.total {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  color: rgb(64, 68, 68);
+  text-align: center;
+
+  & b {
+    color: black;
+  }
+}
+
+.serchInput {
+  width: 80%;
+  height: 50px;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 30px;
+  font-size: 30px;
+  color: grey;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+.menu {
+  height: 100px;
+  background: linear-gradient(180deg, #ad8f8f 30.32%, #f5f5f5 100%);
+}
+
+.pokemonsGalary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
