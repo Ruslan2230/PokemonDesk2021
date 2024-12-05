@@ -1,0 +1,54 @@
+.root {
+  background: #d93e30;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.layaut {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text {
+  position: absolute;
+  z-index: 1;
+  height: 50%;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 700px;
+  line-height: 818px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 4px;
+  display: inline-block;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.sabTitle {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+
+  & span {
+    color: #f2f2f2;
+  }
+}
+
+.button {
+  background: #f2cb07;
+  width: 231px;
+}
+.image {
+  & img {
+    width: 590px;
+  }
+}
